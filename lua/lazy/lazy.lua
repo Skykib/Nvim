@@ -16,15 +16,4 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup({
-  --UI
-  --tema
-  {'folke/tokyonight.nvim'},
-  --trasparencia
-  {'tribela/vim-transparent'}
-})
-
--- Set colorscheme
-vim.opt.termguicolors = true
-vim.cmd.colorscheme('tokyonight')
-
+require('lazy').setup("plugins")
