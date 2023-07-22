@@ -22,6 +22,16 @@ map('', '<C-n>', ':NERDTree<CR>', default_opts)
 map('', '<C-t>', ':NERDTreeToggle<CR>', default_opts)
 map('', '<C-f>', ':NERDTreeFind<CR>', default_opts)
 
+-- Navegar a la pestaña siguiente con <Alt>n
+vim.api.nvim_set_keymap('n', '<M-b>', ':tabnext<CR>', { noremap = true, silent = true })
+-- Navegar a la pestaña anterior con <Alt>p
+vim.api.nvim_set_keymap('n', '<M-p>', ':tabprev<CR>', { noremap = true, silent = true })
+
+-- Atajo para cambiar al siguiente buffer
+vim.api.nvim_set_keymap('n', '<leader>b', ':bn<CR>', { noremap = true, silent = true })
+-- Atajo para cambiar al buffer anterior
+vim.api.nvim_set_keymap('n', '<leader>p', ':bp<CR>', { noremap = true, silent = true })
+
 
 -- Salidas rapidas
 
