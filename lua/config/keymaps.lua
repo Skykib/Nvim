@@ -16,6 +16,11 @@ map('i', '<C-j>', '<down>', default_opts)
 map('i', '<C-k>', '<up>', default_opts)
 map('i', '<C-l>', '<right>', default_opts)
 
+
+-- Salidas rapidas
+map('', '<leader>w', ':w<CR>', default_opts)
+map('', '<leader>q', ':q<CR>', default_opts)
+
 -- NERDTree
 map('', '<leader>n', ':NERDTreeFocus<CR>', default_opts)
 map('', '<C-n>', ':NERDTree<CR>', default_opts)
@@ -32,11 +37,8 @@ vim.api.nvim_set_keymap('n', '<leader>b', ':bn<CR>', { noremap = true, silent = 
 -- Atajo para cambiar al buffer anterior
 vim.api.nvim_set_keymap('n', '<leader>p', ':bp<CR>', { noremap = true, silent = true })
 
-
--- Salidas rapidas
-
-map('', '<leader>w', ':w<CR>', default_opts)
-map('', '<leader>q', ':q<CR>', default_opts)
+-- ToggleTerm
+vim.api.nvim_set_keymap('n', '<F2>', ':ToggleTerm<CR>', { noremap = true, silent = true })
 
 -- easymotion
 -- no sirve map('', '<leader>s', '<plug>(easymotion-prefix)', default_opts)
