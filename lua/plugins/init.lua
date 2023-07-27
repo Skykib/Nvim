@@ -3,6 +3,7 @@
 local default_plugins = {
 
   "nvim-lua/plenary.nvim",
+  {"tribela/vim-transparent", lazy = false,},
 
   -- nvchad plugins
   { "NvChad/extensions", branch = "v2.0" },
