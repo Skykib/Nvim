@@ -53,10 +53,17 @@ M.general = {
 			"LSP formatting",
 		},
 		-- Navegar a la pestaña siguiente con <Alt>n
-    ["<A-b>"] = {':bp<CR>', "Pestaña Siguiente" },
+    ["<A-b>"] = {':tabnext<CR>', "Pestaña Siguiente" },
     -- Navegar a la pestaña anterior con <Alt>p
-    ["<A-p>"] = {':bn<CR>', "Pestaña Anterior" },
-	},
+    ["<A-p>"] = {':tabprevious<CR>', "Pestaña Anterior" },
+    -- Mis modificaciones
+
+    -- NERDtree 
+    -- toggle
+    -- ["<C-n>"] = { "<cmd> NERDTreeToggle <CR>", "Toggle NERDtree" },
+    -- focus
+    ["<leader>e"] = { "<cmd> NERDTreeFocus <CR>", "Focus NERDTree" },
+  },
 
 	t = {
 		["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
@@ -245,7 +252,6 @@ M.lspconfig = {
 		},
 	},
 }
-
 M.nvimtree = {
 	plugin = true,
 
@@ -254,7 +260,7 @@ M.nvimtree = {
 		["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
 
 		-- focus
-		["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+		--["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
 	},
 }
 
